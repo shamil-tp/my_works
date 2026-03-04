@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogify Details | Shamil TP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="blogify.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="mycontributions.html" class="back-link"><i class="bi bi-arrow-left"></i> Back to Projects</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="project-header">
+        <div class="container header-container">
+            <div class="header-icon"><i class="bi bi-pencil-square"></i></div>
+            <div class="header-info">
+                <h1 class="project-title">Blogify</h1>
+                <p class="project-subtitle">Modern Collaborative Blogging Platform</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container content-grid">
+            
+            <div class="main-column">
+                <section class="content-section">
+                    <h2 class="section-heading">Project Overview</h2>
+                    <div class="prose">
+                        <p><strong>Purpose:</strong> To streamline the way developers write and share articles by focusing on structured content delivery, moving away from standard plain-text storage to a robust, custom-tailored data architecture.</p>
+                        <p><strong>How it works:</strong> Authors use a custom Slate.js editor to generate a clean JSON tree representing the document structure, which is then dynamically rendered on the frontend using Tailwind-styled React 19 components.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="section-heading">Key Achievements & Contributions</h2>
+                    <div class="prose">
+                        <p>Collaborated as a core developer to engineer the platform's robust backend API, custom editor integration, and modern frontend architecture.</p>
+                        <ul class="feature-list">
+                            <li><strong>Custom Editor Engine:</strong> Implemented a custom Slate.js engine to serialize content into structured JSON formats.</li>
+                            <li><strong>Backend Pipeline:</strong> Built secure Express.js routes with Zod validation, JWT authentication, and optimized MongoDB queries.</li>
+                            <li><strong>Modern Frontend:</strong> Developed a responsive and high-performance React 19 UI powered by Tailwind CSS 4.0 and Vite.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="section-heading">System Structure</h2>
+                    <div class="code-block">
+                        <pre><code>blogify/
+├── backend/                  
+│   ├── src/               
+│   │   ├── controllers/          
+│   │   ├── middlewares/          
+│   │   ├── models/               
+│   │   ├── routes/               
+│   │   └── utils/                
+│   ├── .env              
+│   └── package.json              
+└── frontend/                 
+    ├── public/           
+    ├── src/
+    │   ├── components/       
+    │   ├── pages/          
+    │   ├── context/            
+    │   ├── utils/           
+    │   ├── main.jsx           
+    │   └── App.jsx
+    └── package.json</code></pre>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="sidebar-column">
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Metrics</h3>
+                    <div class="metric-grid">
+                        <div class="metric-item">
+                            <span class="m-val">~4.5k</span>
+                            <span class="m-label">Lines Inserted</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="m-val">939</span>
+                            <span class="m-label">Total Commits</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="m-val">3</span>
+                            <span class="m-label">Team Size</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="m-val">Core</span>
+                            <span class="m-label">Contributor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Tech Stack</h3>
+                    <div class="tag-cloud">
+                        <span class="tag">React 19</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express.js</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Vite</span>
+                        <span class="tag">Tailwind 4.0</span>
+                        <span class="tag">Slate.js</span>
+                        <span class="tag">Zod</span>
+                        <span class="tag">JWT</span>
+                        <span class="tag">OAuth</span>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Shamil TP. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
