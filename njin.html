@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n-jin Details | Shamil TP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="njin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="mycontributions.html" class="back-link"><i class="bi bi-arrow-left"></i> Back to Projects</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="project-header">
+        <div class="container header-container">
+            <div class="header-icon"><i class="bi bi-spider"></i></div>
+            <div class="header-info">
+                <h1 class="project-title">n-jin</h1>
+                <p class="project-subtitle">Node.js Web Crawler & Search Engine Base</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container content-grid">
+            
+            <div class="main-column">
+                <section class="content-section">
+                    <h2 class="section-heading">Project Overview</h2>
+                    <div class="prose">
+                        <p><strong>Purpose:</strong> A lightweight and efficient Node.js Web Crawler designed to crawl websites starting from a base URL, extract internal links, and recursively process pages.</p>
+                        <p><strong>How it works:</strong> This project demonstrates search engine and indexing system fundamentals. It normalizes URLs to avoid duplicates and tracks the number of times each page is found, making it an excellent foundation for an SEO analyzer or a full search engine.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="section-heading">Key Features</h2>
+                    <div class="prose">
+                        <p>Built as a pure Node.js application, it prioritizes speed, efficiency, and a deep understanding of core web crawling concepts.</p>
+                        <ul class="feature-list">
+                            <li><strong>Recursive Crawling:</strong> Efficiently crawl all linked pages within a single website starting from a designated base URL.</li>
+                            <li><strong>Link Extraction:</strong> Parse HTML safely to extract all valid internal links while ignoring external properties.</li>
+                            <li><strong>URL Normalization:</strong> Built-in safeguards to normalize diverse URL structures, comprehensively preventing recursive duplication and infinite loops.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="section-heading">Project Structure</h2>
+                    <div class="code-block">
+                        <pre><code>web-crawler/
+├── index.js        # Entry point of the application
+├── crawl.js        # Core crawling & URL parsing logic
+├── report.js       # Reporting logic, indexing & statistics
+├── package.json    # Dependencies and scripts (ES6+)
+└── .gitignore      # Git exclusions</code></pre>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="sidebar-column">
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Metrics</h3>
+                    <div class="metric-grid">
+                        <div class="metric-item">
+                            <span class="m-val">100%</span>
+                            <span class="m-label">JavaScript</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="m-val">ES6+</span>
+                            <span class="m-label">Syntax</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="m-val">Mini</span>
+                            <span class="m-label">Dependencies</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="m-val">Web</span>
+                            <span class="m-label">Crawler</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Tech Stack</h3>
+                    <div class="tag-cloud">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">JSDOM</span>
+                        <span class="tag">Web API</span>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Shamil TP. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
