@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shamil TP | Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Shamil TP, a Full Stack Developer specializing in Backend technologies, Node.js, and performance optimization.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script>
+        // Redirect mobile and touch devices to the dedicated Mobile Terminal HUD
+        if (window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            window.location.replace("mobile.html");
+        }
+    </script>
+</head>
+<body>
+    <!-- Terminal Boot Preloader -->
+    <div id="terminal-preloader">
+        <div class="terminal-content">
+            <p id="boot-text"></p><span class="blinking-cursor"></span>
+        </div>
+    </div>
+
+    <!-- Data Stream Scroll Tracker -->
+    <div id="sys-mem-tracker">
+        <div id="sys-fill"></div>
+        <span id="sys-percent">SYS.MEM.[000%]</span>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo"><span class="logo-text" data-value="shamiltp">shamiltp</span><span class="highlight">.me</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="greeting reveal from-bottom">Hello, I'm</p>
+                <h1 class="reveal from-bottom delay-1" data-text="Shamil TP">Shamil TP</h1>
+                <h2 class="typing-text reveal from-bottom delay-2">Full Stack <span class="highlight">Backend</span> Engineer</h2>
+                <p class="tagline reveal from-bottom delay-2">Architecting robust server-side solutions where data efficiency meets performance.</p>
+                <div class="hero-btns reveal from-bottom delay-3">
+                    <a href="#projects" class="btn btn-primary">View Work</a>
+                    <a href="#" class="btn btn-outline">Download Resume <i class="bi bi-download"></i></a>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/shamil-tp" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/shamil-tp" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                    <a href="mailto:shamiltp073@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual reveal from-right delay-2">
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="dot red" id="red_button"></span>
+                        <span class="dot yellow" id="yellow_button"></span>
+                        <span class="dot green" id="green_button"></span>
+                    </div>
+                    <pre><code class="language-javascript" id="code">
+const developer = {
+  name: "Shamil TP",
+  role: "Backend Specialist",
+  passion: "Performance Optimization",
+  skills: [
+    "Node.js", 
+    "System Architecture", 
+    "Database Efficiency"
+  ],
+  status: "Ready to build"
+};
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section reveal from-bottom">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="profile-container reveal from-left delay-1">
+                    <img src="myProfileImg.jpeg" alt="Shamil TP Profile" class="profile-img">
+                </div>
+                <div class="about-text reveal from-right delay-2" id="about-me-text">
+                    <p>I am a developer motivated by a sincere interest in the fundamental workings of the internet. Although I can create responsive frontends, my area of expertise is the <strong>backend</strong>, where data efficiency, server architecture, and logic come together.</p>
+                    <p>I enjoy working with low-level details because memory and performance optimization can have a noticeable impact. I see myself as a hands-on developer who enjoys the process of improving the speed and dependability of systems.<span class="blinking-cursor"></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section reveal from-bottom">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category reveal from-bottom delay-1">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span>JavaScript (ES6+)</span>
+                        <span>React.js</span>
+                        <span>Vue.js</span>
+                        <span>HTML5/CSS3</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal from-bottom delay-2">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>RESTful APIs</span>
+                        <span>Socket.io</span>
+                        <span>OAuth 2.0 / JWT</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal from-bottom delay-3">
+                    <h3>Database & Caching</h3>
+                    <div class="skill-tags">
+                        <span>MongoDB</span>
+                        <span>Redis</span>
+                        <span>Mongoose Aggregations</span>
+                        <span>Schema Design</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal from-bottom delay-4">
+                    <h3>System Architecture</h3>
+                    <div class="skill-tags">
+                        <span>Distributed Systems</span>
+                        <span>HLS Media Streaming</span>
+                        <span>FFmpeg Pipelines</span>
+                        <span>Cloudflare R2 / AWS</span>
+                        <span>tus (Resumable Uploads)</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal from-bottom delay-5">
+                    <h3>Security & Tools</h3>
+                    <div class="skill-tags">
+                        <span>OWASP Standards</span>
+                        <span>Helmet / Zod</span>
+                        <span>Docker</span>
+                        <span>Git & GitHub</span>
+                        <span>Postman</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section reveal from-bottom">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal from-bottom delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Nov 2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Freelance Full Stack Developer</h3>
+                        <h4>Independent Clients</h4>
+                        <ul>
+                            <li>Architected and delivered "Tutora", a specialized educational management platform, automating student and staff workflows to reduce administrative overhead by 35%.</li>
+                            <li>Engineered "emvBazar", an automated customer debt tracking system integrating WhatsApp APIs, increasing collection efficiency by 40% and ensuring strict data privacy.</li>
+                            <li>Designed comprehensive user management architectures and secure RBAC portals tailored to strict client specifications.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal from-bottom delay-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Dec 2024 - Mar 2025</div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Development Intern</h3>
+                        <h4>Fugipie Technologies</h4>
+                        <ul>
+                            <li>Designed scalable RESTful APIs using Node.js and Express.js, implementing Zod schema validation to ensure 100% data input integrity.</li>
+                            <li>Engineered secure authentication systems using JWT and BcryptJS, significantly fortifying application security compliance.</li>
+                            <li>Managed MongoDB databases with Mongoose ODM, reducing complex query response times by 40% through optimized aggregation pipelines.</li>
+                            <li>Implemented strong security protocols including Helmet.js and Rate-Limiting to effectively protect against DDoS vulnerabilities.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section reveal from-bottom">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card reveal from-bottom delay-1">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="header-main">
+                                <i class="bi bi-folder-fill folder-icon"></i>
+                                <h3 class="project-title">LUME</h3>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/shamil-tp/LUME.git" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                                <a href="https://lume-one.vercel.app/" target="_blank" aria-label="Live Demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-desc">An advanced, production-ready media streaming platform built to handle heavy file operations and low-latency delivery.</p>
+                        
+                        <button class="details-toggle-btn">
+                            Contributions & Details <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="contributions collapsed">
+                            <ul>
+                                <li>Implemented a tus server handling highly resilient, resumable chunked media uploads.</li>
+                                <li>Engineered FFmpeg pipelines slicing target media into 6-second adaptive .m3u8 chunks.</li>
+                                <li>Configured secure, edge-optimized storage targeting Cloudflare R2 alongside Cloudinary.</li>
+                                <li>Built a custom HLS player seamlessly navigating variable bandwidth environments.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tech-stack-badges">
+                            <span class="badge badge-accent">tus</span>
+                            <span class="badge badge-info">FFmpeg</span>
+                            <span class="badge badge-warning">HLS</span>
+                            <span class="badge badge-secondary">Cloudflare R2</span>
+                            <span class="badge badge-dark">Cloudinary</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal from-bottom delay-2">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="header-main">
+                                <i class="bi bi-folder-fill folder-icon"></i>
+                                <h3 class="project-title">N-jin</h3>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/shamil-tp/web-crawler.git" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                                <a href="https://magnificent-recreation-production.up.railway.app/" target="_blank" aria-label="Live Demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-desc">A powerful, scalable localized search engine powered by a custom-built distributed web crawler.</p>
+                        
+                        <button class="details-toggle-btn">
+                            Contributions & Details <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="contributions collapsed">
+                            <ul>
+                                <li>Built a custom web crawler from scratch traversing ~250,000 websites.</li>
+                                <li>Designed dynamic MongoDB schemas to index massive data volumes.</li>
+                                <li>Implemented an intelligent ranking algorithm via Mongoose aggregation pipelines.</li>
+                                <li>Optimized search latency aggressively utilizing Redis caching layers.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tech-stack-badges">
+                            <span class="badge badge-accent">Node.js</span>
+                            <span class="badge badge-success">MongoDB</span>
+                            <span class="badge badge-danger">Redis</span>
+                            <span class="badge badge-info">Mongoose</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal from-bottom delay-3">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="header-main">
+                                <i class="bi bi-folder-fill folder-icon"></i>
+                                <h3 class="project-title">coffeeCat</h3>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/shamil-tp/coffeeCat.git" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                                <a href="https://coffee-cat-topaz.vercel.app/login" target="_blank" aria-label="Live Demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-desc">An Instagram-WhatsApp hybrid app serving as a peaceful chatting environment to connect with loved ones.</p>
+                        
+                        <button class="details-toggle-btn">
+                            Contributions & Details <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="contributions collapsed">
+                            <ul>
+                                <li>Built real-time, bi-directional chat infrastructure utilizing Socket.io.</li>
+                                <li>Constructed a social graph supporting user search, profiles, and following mechanics.</li>
+                                <li>Integrated Cloudinary pipelines for fast image posting, alongside likes and comments.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tech-stack-badges">
+                            <span class="badge badge-accent">Vue</span>
+                            <span class="badge badge-secondary">Express</span>
+                            <span class="badge badge-info">Socket.io</span>
+                            <span class="badge badge-dark">Cloudinary</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal from-bottom delay-4">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="header-main">
+                                <i class="bi bi-folder-fill folder-icon"></i>
+                                <h3 class="project-title">Skylark</h3>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/sinanrahman/skylark.git" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                                <a href="https://skylark-frontend-eqdt.onrender.com/auth/login" target="_blank" aria-label="Live Demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-desc">A premium rent-a-car service designed to offer customers an easy, fast, and reliable way to book cars online. Developed in a 3-member team.</p>
+                        
+                        <button class="details-toggle-btn">
+                            Contributions & Details <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="contributions collapsed">
+                            <ul>
+                                <li>Developed an advanced, fully functional admin panel.</li>
+                                <li>Implemented real-time statistics and car management systems.</li>
+                                <li>Built Role-Based Access Control (RBAC) architecture.</li>
+                                <li>Engineered issue resolving and car maintenance tracking workflows.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tech-stack-badges">
+                            <span class="badge badge-accent">Node.js</span>
+                            <span class="badge badge-secondary">Express</span>
+                            <span class="badge badge-success">MongoDB</span>
+                            <span class="badge badge-info">Vue</span>
+                            <span class="badge badge-primary">Bootstrap</span>
+                            <span class="badge badge-dark">Razorpay</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal from-bottom delay-5">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="header-main">
+                                <i class="bi bi-folder-fill folder-icon"></i>
+                                <h3 class="project-title">Blogify</h3>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/shamil-tp/Blogify.git" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                                <a href="https://blogify-7mdx.vercel.app/" target="_blank" aria-label="Live Demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-desc">A highly secure modern blogging platform built with React, focusing on rich editing experiences and stringent security protocols.</p>
+                        
+                        <button class="details-toggle-btn">
+                            Contributions & Details <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="contributions collapsed">
+                            <ul>
+                                <li>Integrated Quill for rich text editing and react-grid-layout for dynamic positioning.</li>
+                                <li>Secured backend following OWASP 2025 guidelines (Helmet, rate-limiting, hpp).</li>
+                                <li>Implemented Google OAuth 2 alongside JWT access/refresh token strategies.</li>
+                                <li>Engineered robust parameter sanitization pipelines using Zod.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tech-stack-badges">
+                            <span class="badge badge-accent">React</span>
+                            <span class="badge badge-secondary">Express</span>
+                            <span class="badge badge-info">OAuth 2</span>
+                            <span class="badge badge-dark">Quill</span>
+                            <span class="badge badge-danger">Helmet</span>
+                            <span class="badge badge-primary">Zod</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal from-bottom delay-6">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="header-main">
+                                <i class="bi bi-folder-fill folder-icon"></i>
+                                <h3 class="project-title">Osmium</h3>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/shamil-tp/osmium.git" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                                <a href="https://osmium-production.up.railway.app" target="_blank" aria-label="Live Demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-desc">A lightweight, highly optimized file compression and decompression application built entirely from mathematical fundamentals.</p>
+                        
+                        <button class="details-toggle-btn">
+                            Contributions & Details <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="contributions collapsed">
+                            <ul>
+                                <li>Implemented complex LZ77 algorithmic logic from scratch.</li>
+                                <li>Engineered custom Huffman coding tree generations.</li>
+                                <li>Enabled seamless handling of various text-based extensions (.c, .html, .json, etc.).</li>
+                                <li>Created an immediate, login-free UI using EJS for rapid user conversions.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tech-stack-badges">
+                            <span class="badge badge-accent">Algorithm Dev</span>
+                            <span class="badge badge-success">Node.js</span>
+                            <span class="badge badge-secondary">Express</span>
+                            <span class="badge badge-info">EJS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal from-bottom delay-7">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <div class="header-main">
+                                <i class="bi bi-folder-fill folder-icon"></i>
+                                <h3 class="project-title">blog-Rendering-Lib</h3>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/shamil-tp/blog-Rendering-Library.git" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                                <a href="https://shamil-tp.github.io/blog-Rendering-Library/?slug=messis-world-cup-glory-48qNNV&theme=tokyo_night" target="_blank" aria-label="Live Demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-desc">A custom WYSIWYG blog rendering library created from scratch, designed to construct intended structures directly from JSON.</p>
+                        
+                        <button class="details-toggle-btn">
+                            Contributions & Details <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="contributions collapsed">
+                            <ul>
+                                <li>Engineered raw DOM manipulation algorithms with zero dependencies.</li>
+                                <li>Developed parsers to map database JSON payloads into exact visual structures.</li>
+                                <li>Published as open-source (MIT License) for community usage.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tech-stack-badges">
+                            <span class="badge badge-accent">Vanilla</span>
+                            <span class="badge badge-secondary">DOM</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section reveal from-bottom">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-grid">
+                <div class="edu-card reveal from-bottom delay-1">
+                    <h3>Bachelor of Computer Application (BCA)</h3>
+                    <h4>Safi Institute of Advanced Study</h4>
+                    <p class="date">Graduation: March 2025</p>
+                    <p class="details">CGPA: 7.76/10</p>
+                </div>
+                <div class="edu-card reveal from-bottom delay-2">
+                    <h3>Full Stack Web Development</h3>
+                    <h4>DataTribe</h4>
+                    <p class="details">Intensive 6-month program covering MERN stack, RESTful API design, and database management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section reveal from-bottom">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content reveal from-bottom delay-1">
+                <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <a href="mailto:shamiltp073@gmail.com" class="btn btn-primary big-btn">Say Hello</a>
+                <div class="contact-details">
+                    <p class="scramble-text" data-value="+91 7902786927"><i class="bi bi-telephone"></i> +91 7902786927</p>
+                    <p class="scramble-text" data-value="Kerala, India"><i class="bi bi-geo-alt"></i> Kerala, India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Designed & Built by Shamil TP</p>
+        </div>
+    </footer>
+
+</body>
+</html>

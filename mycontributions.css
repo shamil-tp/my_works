@@ -1,0 +1,191 @@
+:root {
+    --bg-color: #F5F2EB;
+    --card-bg: #FFFFFF;
+    --text-primary: #000000;
+    --text-secondary: #333333;
+    --accent: #000000;
+    --border-color: #000000;
+    --nav-bg: rgba(245, 242, 235, 0.95);
+    --font-main: 'Outfit', 'Helvetica Neue', sans-serif;
+    --font-mono: 'Space Mono', 'Fira Code', monospace;
+    --transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--nav-bg);
+    border-bottom: 3px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    text-transform: lowercase;
+}
+
+.highlight {
+    color: var(--text-primary);
+}
+
+/* Keep highlight same color in brutalist */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    font-weight: 700;
+    font-family: var(--font-mono);
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+/* Header */
+.page-header {
+    padding: 6rem 0 4rem;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+.page-subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    border-left: 4px solid var(--border-color);
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+/* Grid */
+.main-content {
+    padding-bottom: 6rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border: 3px solid var(--border-color);
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: var(--transition);
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
+    border-radius: 0;
+    /* Strict square brutalism */
+}
+
+.project-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 14px 14px 0px rgba(0, 0, 0, 1);
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+    color: var(--text-primary);
+    text-transform: uppercase;
+}
+
+.card-desc {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    border-top: 3px solid var(--border-color);
+    padding: 3rem 0;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    background: var(--bg-color);
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-subtitle {
+        text-align: left;
+        border-left: none;
+        border-top: 4px solid var(--border-color);
+        padding-left: 0;
+        padding-top: 1.5rem;
+    }
+}
