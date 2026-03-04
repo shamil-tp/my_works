@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUME Details | Shamil TP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lume.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="mycontributions.html" class="back-link"><i class="bi bi-arrow-left"></i> Back to Projects</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="project-header">
+        <div class="container header-container">
+            <div class="header-icon"><i class="bi bi-play-circle"></i></div>
+            <div class="header-info">
+                <h1 class="project-title">LUME</h1>
+                <p class="project-subtitle">Premium Rent-A-Car Platform</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container content-grid">
+            
+            <div class="main-column">
+                <section class="content-section">
+                    <h2 class="section-heading">Project Overview</h2>
+                    <div class="prose">
+                        <p><strong>Purpose:</strong> To offer customers an easy, fast, and reliable way to book cars online while giving administrators powerful tools to manage fleet, track issues, and analyze revenue.</p>
+                        <p><strong>How it works:</strong> Users browse a luxury fleet (BMW, Benz), pick dates, and securely pay via Razorpay. Admins use a dedicated portal for fleet management, deep analytics, and customer ticket resolution.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="section-heading">Key Achievements & Contributions</h2>
+                    <div class="prose">
+                        <p>As a core developer in the 3-member team, I engineered the entire Admin Panel, Vue architecture, and massive backend integrations.</p>
+                        <ul class="feature-list">
+                            <li><strong>Vue Architecture:</strong> Built the entire Router structure, Layout components (AdminLayout, AuthLayout, MainLayout), and Pinia state stores.</li>
+                            <li><strong>Backend Services:</strong> Integrated Razorpay APIs, complex Mongoose schemas (Car, User, Issue, Booking), OTP Mailer workflows, and robust JWT middlewares.</li>
+                            <li><strong>Frontend Pages:</strong> Single-handedly crafted the Admin interface (Dashboard, Users, Issues, Reports), Authentication pages, and intricate dynamic Booking logic.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2 class="section-heading">System Structure</h2>
+                    <div class="code-block">
+                        <pre><code>skylark/
+├── backend/                  
+│   ├── config/               
+│   ├── controllers/          
+│   ├── middlewares/          
+│   ├── models/               
+│   ├── routes/               
+│   ├── utils/                
+│   └── index.js              
+└── frontend/                 
+    ├── public/img/           
+    ├── src/
+    │   ├── components/       
+    │   ├── layouts/          
+    │   ├── pages/            
+    │   ├── router/           
+    │   ├── services/         
+    │   ├── stores/           
+    │   └── main.js           
+    └── package.json</code></pre>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="sidebar-column">
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Metrics</h3>
+                    <div class="metric-grid">
+                        <div class="metric-item">
+                            <span class="m-val">~6.7k</span>
+                            <span class="m-label">Lines Inserted</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="m-val">~740</span>
+                            <span class="m-label">Lines Deleted</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="m-val">23.4%</span>
+                            <span class="m-label">Total Codebase</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="m-val">5</span>
+                            <span class="m-label">Arch Commits</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Tech Stack</h3>
+                    <div class="tag-cloud">
+                        <span class="tag">Vue 3</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express.js</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Vite</span>
+                        <span class="tag">Tailwind</span>
+                        <span class="tag">Pinia</span>
+                        <span class="tag">Razorpay</span>
+                        <span class="tag">JWT</span>
+                        <span class="tag">Chart.js</span>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Shamil TP. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
